@@ -18,7 +18,7 @@ class CreateAbsenLogTable extends Migration {
 			$table->string('site_code', 15)->nullable();
 			$table->string('absen_code', 30)->unique()->nullable()->index('absen_log_absen_code_idx');
 			$table->integer('mesin_number');
-			$table->integer('pin');
+			$table->string('pin');
 			$table->timestamp('date_time');
 			$table->integer('ver');
 			$table->integer('status_absen_id');
